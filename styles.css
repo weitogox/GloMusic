@@ -1,0 +1,195 @@
+@mixin font-base {
+	padding: 0;
+	margin: 0;
+	line-height: 1.3;
+	font-weight: 600;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FBDBC1;
+  }
+
+body {
+    background-color: #F0CCB3;
+}
+
+h1 {
+    float: left;
+    margin-top: 5px;
+    color: #374047;
+    font-size: 28px;
+  }
+
+h2 {
+  padding-top: 20px;
+}
+
+h2, h3, h4, p{
+    text-align: center;
+    color: #374047;
+}
+
+ul {
+    float: right;
+  }
+
+li {
+    display: inline-block;
+    margin-right: 25px;
+    text-align: center;
+    background-color: #EB9AC9;
+  }
+
+a {
+    display: inline-block;
+    width: 150px;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 24px;
+    color: #FBFAEC;
+  }
+
+section {
+  position: fixed;
+  text-align: center;
+  width: 560px;
+}
+
+.main-content {
+    padding: 220px 20px;
+    text-align: center;
+    background-color: #EB9AC9;
+}
+
+.clearfix:after {
+     content: " ";
+     visibility: hidden;
+     display: block;
+     height: 0;
+     clear: both;
+  }
+
+button {
+    border-radius: 4px;
+    background-color: #FBFAEC;
+    color: #374047;
+    font-size: 18px;
+}
+
+main {
+  padding: 40px 18px 10px;
+  width: 100%;
+}
+
+
+button:active {
+    color: white;
+    background-color: #374047;
+}
+
+.about-me , .contact , .gallery, .socials{
+  padding: 26px 20px;
+  text-align: center;
+  background-color: #EB9AC9;
+}
+
+.socials {
+  padding-bottom: 60px;
+}
+form {
+  padding: 2rem 18rem;
+}
+
+.carousel-slide {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  justify-items: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+	width: 560px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+article {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	border: 2px solid white;
+	border-radius: 8px;
+	margin: 0 auto;
+}
+
+article::after {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.item:after {
+  content:"";
+  display: inline-table;
+  clear: both;
+}
+
+.thumb {
+	height: 100px;
+  width:auto;
+	border-radius: 4px;
+}
+
+.details {
+	padding: 8px 22px;
+}
+
+h4#youtubeTitle, h6 {
+  text-align: left;
+  color: #374047;
+}
+
+#listButton {
+  margin-left: 10px;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .container {
+    width: 100%;
+    background-color: #fff;
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .main-content , .about-me {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #EB9AC9;
+  }
+  .contact {
+    display: relative;
+  }
+
+  .container {
+    background-color: #fff;
+    margin: 20px auto;
+  }
+  
+}

@@ -1,0 +1,18 @@
+# GloMusic
+#### Video Demo:  <https://youtu.be/hjVz8cRNx7s>
+#### Description: With GloMusic, users will find the current top 25 songs (data pulled from YouTube API) in 50+ different countries.
+
+## Usage
+1. **Homepage:** Click on the "Start Here" button to go into the Search Page.
+2. **Search Page:** Using the dropdown menu to select a country that interests you. Once a country is selected, a list of results containing the most trending 25 songs of that country will be displayed. Each song will be shown with an cover image, the song title, and description along with a button linked to its YouTube page. All of the data mentioned are pulled directly from YouTube API. On the left, users can choose the way results display by clicking on the "List" button for a list view or the "Gird" button for a grid view with two columns.
+3. **About Page:** This page contains the mission statement of the project, a brief introduction about the author, and social links for users to contact the author as well.
+
+## Challenges and Lessons:
+1. The research phase of the project took so much more than I expected (over 2 weeks). The initial idea for my project was to use Apple Music API to get trending music from different cities instead of countries, since the charts are available to use and easier to access through Apple API requests. However, I first hit the wall by learning that Apple Music is not free. Then I looked into Spotify API, which I changed my direction slightly again to have the app provide trending charts and let the users favorite their selections and generate playlists on their Spotify accounts, which I was getting more excited about. The reality then hits me again - I need to have a Spotify subscription to try if the app really works. Finally, I started reasearching on YouTube API and found some valuable data on music charts and decided to move forward with it.
+2. Learning how to use API from zero by watching a lot of tutorials and reading documentations took another 1/3 of the timeline yet was another valuable lesson for me along the way. I can see a lot more possibilities for future projects, especially not only to showcase the data but write programs to analyze and find insights from the results.
+3. Before building the web application, I actually wanted it to be an iOS app and made an initial mockup on Xcode (more complicated than I expected but I enjoyed the process so much), again - a lot of documentations and tutorials, but after realizing I needed to pay to test the app, I quickly transitioned to web application which I am also more familiar with.
+
+## More About GloMusic
+#### The mission behind GloMusic is to use music as a universal language to connect individuals to other parts of the world, get a taste of other cultures, and even find insights behind the melodies and lyrics on the top charts.
+
+#### I grew up listening to classic HongKong music by Alan Tam and Teresa Teng in China, then after moving to the States, I was drawn into Hiphop and Jazz, then Reggeaton when I traveled to PR, and Thai HipHop when I was in Thailand. Even if I do not comprehend the lyrics, I still have fun vibing to the songs. However, I often find it difficult to find music in other languages, then I thought why not just bring all the trending music around the world and bring them to one platform, where people can get a taste of other cultures and, hopefully, find their new favorite songs from places they haven’t been or even heard of.

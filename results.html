@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GloMusic Search Results</title>
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="./script.js"></script>
+        <nav class="clearfix" >
+            <h1>Glo&#127758;Music</h1>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="results.html">Search</a></li>
+              <li><a href="contact.html">About</a></li>
+            </ul>
+          </nav>
+          <br><br>
+          <h2>Search the Hottest 25 Songs in</h2>
+          <button onclick="listView()" id="listButton"><i class="fa fa-bars"></i> List</button>
+          <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+          <form>
+            <select autofocus id="mySelect" class="form-control mx-auto w-auto" class="form-control" name="country">
+              <option disabled selected value = "">Choose a Country</option>             
+              <option value='PL4fGSI1pDJn6puJdseH2Rt9sMvt9E2M4i'>Global</option>
+              <option value='PLqOwx1vS-4dko2evnQ4KHtOkyfuLo_0lS'>Argentina</option>
+              <option value="PL4fGSI1pDJn7xvYy-bP6UFeG5tITQgScd">Australia</option>
+              <option value="PL4fGSI1pDJn6fFTVP30alDfSDAkEtHaNr">Belgium</option>
+              <option value="PL4fGSI1pDJn7rGBE8kEC0CqTa1nMh9AKB">Brazil</option>
+              <option value="PL4fGSI1pDJn57Q7WbODbmXjyjgXi0BTyD">Canada</option>
+              <option value="PL4fGSI1pDJn777t00zYu_BKjXHUdhkXH9">Chile</option>
+              <option value="PL4fGSI1pDJn6CW97F1vSZOkoU7k7VsYk9">Colombia</option>
+              <option value="PL4fGSI1pDJn6U9fUfBkfy3uyXE7Rtvo4b">Costa Rica</option>
+              <option value="PL4fGSI1pDJn5wV1AgglmIN_8okwTkz9WT">Czechia</option>
+              <option value="PL4fGSI1pDJn51jFsgXEIR7WdKBychJiMU">Denmark</option>
+              <option value="PL4fGSI1pDJn4C36SQoHh9fII-EXde2i3k">Dominican Republic</option>
+              <option value="PL4fGSI1pDJn7K4bdLZJ5GppzLDAihF58q">Ecuador</option>
+              <option value="PL4fGSI1pDJn510j-1L8bMgKTyeRwPrXWY">Egypt</option>
+              <option value="PL4fGSI1pDJn6ALv-WRypOl0nGaLgtW6nC">El Salvador</option>
+              <option value="PL4fGSI1pDJn7uCBUO9GemJda1xfqmvV7_">Estonia</option>
+              <option value="PL4fGSI1pDJn4T5TECl_90hfJsPUu1yi2y">Finland</option>
+              <option value="PL4fGSI1pDJn7bK3y1Hx-qpHBqfr6cesNs">France</option>
+              <option value="PL4fGSI1pDJn6KpOXlp0MH8qA9tngXaUJ-">Germany</option>
+              <option value="PL4fGSI1pDJn7NCQ_U0nwlhidgZ8E3uBQw">Guatemala</option>
+              <option value="PL4fGSI1pDJn6K3QY1nHyhOGQqNCBGbMKi">Hungary</option>
+              <option value="PL4fGSI1pDJn6pwJw_mb31TUqc9C_gpskG">Iceland</option>
+              <option value="PL4fGSI1pDJn4pTWyM3t61lOyZ6_4jcNOw">India</option>
+              <option value="PL4fGSI1pDJn5ObxTlEPlkkornHXUiKX1z">Indonesia</option>
+              <option value="PL4fGSI1pDJn5S_UFt83P-RlBC4CR3JYuo">Ireland</option>
+              <option value="PL4fGSI1pDJn4ECcNLNscMAPND-Degbd5N">Israel</option>  
+              <option value="PL4fGSI1pDJn5JiDypHxveEplQrd7XQMlX">Italy</option>
+              <option value="PL4fGSI1pDJn4-UIb6RKHdxam-oAUULIGB">Japan</option>
+              <option value="PL4fGSI1pDJn7z-3xqv1Ujjobcy2pjpZAA">Kenya</option>
+              <option value="PL4fGSI1pDJn4ie_xg2ndQYSEeZrFYvkQf">Luxembourg</option>
+              <option value="PL4fGSI1pDJn6fko1AmNa_pdGPZr5ROFvd">Mexico</option>
+              <option value="PL4fGSI1pDJn7CXu1B1U0lYQ0qfPB9TVfa">Netherlands</option>
+              <option value="PL4fGSI1pDJn6SZ8psSiS6j-QgUACJK4gC">New Zealand</option>
+              <option value="PL4fGSI1pDJn6Au0oeuQPsd1iFyiU8Br9I">Nigeria</option>
+              <option value="PL4fGSI1pDJn7ywehQhyuuPWo3ayrdSOHn">Norway</option>
+              <option value="PL4fGSI1pDJn4G4B-V4UTrxD7l5mE9cPS-">Panama</option>
+              <option value="PL4fGSI1pDJn5G0B8V2PSgs7O9EA4gF5m_">Paraguay</option>
+              <option value="PL4fGSI1pDJn4k5jOJjYpq8pluME-gNAnh">Peru</option>
+              <option value="PL4fGSI1pDJn68fmsRw9f6g-NzU5UA45v1">Poland</option>
+              <option value="PL4fGSI1pDJn7H0X0bZN4C-I6YeldOvPku">Portugal</option>
+              <option value="PL4fGSI1pDJn5G2T6hrqwSS7ajUA7y4S5l">Romania</option>
+              <option value="PL4fGSI1pDJn5C8dBiYt0BTREyCHbZ47qc">Russia</option>
+              <option value="PL4fGSI1pDJn7xNK-XdqvCsqa7I8Nx3IyW">Saudi Arabia</option>
+              <option value="PL4fGSI1pDJn79dpGvfySMY9w43BluD4lI">Serbia</option>
+              <option value="PL4fGSI1pDJn7xvqMZR_9OgljLcMQpuKXN">South Africa</option>
+              <option value="PL4fGSI1pDJn6jXS_Tv_N9B8Z0HTRVJE0m">South Korea</option>
+              <option value="PL4fGSI1pDJn6sMPCoD7PdSlEgyUylgxuT">Spain</option>
+              <option value="PL4fGSI1pDJn7S_JFSuBHol2RH9WphaqzS">Sweden</option>
+              <option value="PL4fGSI1pDJn6Nhmcqn4xr769wwoMmS3DI">Switzerland</option>
+              <option value="PL4fGSI1pDJn4CI0qH2JZYs2qGXo1itpCG">Tanzania</option>
+              <optio value="PL4fGSI1pDJn5tdVDtIAZArERm_vv4uFCR">Turkey</option>
+              <option value="PL4fGSI1pDJn56127QXqxGADbedOpL5z5R">Uganda</option>
+              <option value="PL4fGSI1pDJn4E_HoW5HB-w5vFPkYfo3dB">Ukraine</option>
+              <option value="PL4fGSI1pDJn71VxNxT-PpECxHCVv8T-oX">United Arab Emirates</option>
+              <option value="PL4fGSI1pDJn6_f5P3MnzXg9l3GDfnSlXa">United Kingdom</option>
+              <option value="PL4fGSI1pDJn6O1LS0XSdF3RyO0Rq_LDeI">United States</option>
+              <option value="PL4fGSI1pDJn5caN5mlO8NWCPSyuHkQANg">Uruguay</option>
+              <option value="PL4fGSI1pDJn7PWidyUayXX6-josrejRMG">Zimbabwe</option>
+            </select>
+          </form>
+          <main id="mainView">
+
+        </main id="mainView">
+    </body>
+</html>
